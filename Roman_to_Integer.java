@@ -13,7 +13,6 @@ public class Roman_to_Integer {
 	   hmap.put('M', 1000);
 	   int ans = hmap.get(s.charAt(s.length()-1));
 	   for(int i=s.length()-2;i>=0;i--) {
-		   int num = ;
 		    if(hmap.get(s.charAt(i))< hmap.get(s.charAt(i+1))) { // means subtract
 		    	ans = ans - hmap.get(s.charAt(i));
 		    }

@@ -12,14 +12,13 @@ public class Roman_to_Integer {
 	   hmap.put('D', 500);
 	   hmap.put('M', 1000);
 	   int ans = hmap.get(s.charAt(s.length()-1));
-//	   System.out.println(ans);
 	   for(int i=s.length()-2;i>=0;i--) {
-		   int num = hmap.get(s.charAt(i));
-		    if(num<ans && s.charAt(i)!=s.charAt(i+1)) { // means subtract
-		    	ans = ans - num;
+		   int num = ;
+		    if(hmap.get(s.charAt(i))< hmap.get(s.charAt(i+1))) { // means subtract
+		    	ans = ans - hmap.get(s.charAt(i));
 		    }
 		    else { // means add
-		    	ans = ans + num;
+		    	ans = ans + hmap.get(s.charAt(i));
 		    }
 	   }
 	   return ans;
